@@ -15,12 +15,20 @@ package edu.macalester.comp127.hw1;
  */
 public class UnitConversions {
 
-    public static double sheppeyToMiles(double sheppey) {return sheppey * 7/8;
+    /** This method converts Sheppy into Miles */
+    public static double sheppeyToMiles(double sheppey) {
+        return (double) 7 / 8 * sheppey;
     }
-
-    public static double milesToSheppey(double miles) {return miles * 8/7;
+    /** This method converts Miles into Sheppy */
+    public static double milesToSheppey(double miles) {
+        return (double) 8 / 7 * miles;
     }
-    public static double DonkeypowerToWatts(double donkeypower){return donkeypower * 250;
+    /** This method converts DonkeyPower into Watts */
+    public static double donkeyPowerToWatts (double donkeyPower){
+        return donkeyPower * 250;
     }
-    public static double WattstoDonkeypower(double Watts){return Watts / 250;}
+    /** This method converts Watts into DonkeyPower */
+    public static double wattsToDonkeyPower (double watts){
+        return watts / 250;
+    }
 }

@@ -22,18 +22,19 @@ public class UnitConversionsTest {
     }
 
     @Test
-    public void testDonkeypowerToWatts(){
-        assertEquals(0.0, UnitConversions.DonkeypowerToWatts(0), 0.0001);
-        assertEquals(250, UnitConversions.DonkeypowerToWatts(1), 0.0001);
-        assertEquals(1000, UnitConversions.DonkeypowerToWatts(4), 0.0001);
-        assertEquals(2625, UnitConversions.DonkeypowerToWatts(10.5), 0.0001);
+    public void testDonkeyPowerToWatts(){
+        assertEquals(250, UnitConversions.donkeyPowerToWatts(1.0), 0.0001);
+        assertEquals(1000, UnitConversions.donkeyPowerToWatts(4.0), 0.0001);
+        assertEquals(9375, UnitConversions.donkeyPowerToWatts(37.5), 0.0001);
+        assertEquals(27432.5, UnitConversions.donkeyPowerToWatts(109.73), 0.0001);
     }
+
     @Test
-    public void WattstoDonkeypower(){
-        assertEquals(0.0, UnitConversions.WattstoDonkeypower(0), 0.0001);
-        assertEquals(1, UnitConversions.WattstoDonkeypower(250), 0.0001);
-        assertEquals(4, UnitConversions.WattstoDonkeypower(1000), 0.0001);
-        assertEquals(10.304, UnitConversions.WattstoDonkeypower(2576), 0.0001);
+    public void testWattsToDonkeyPower(){
+        assertEquals(1.0, UnitConversions.wattsToDonkeyPower(250), 0.0001);
+        assertEquals(4.944, UnitConversions.wattsToDonkeyPower(1236), 0.0001);
+        assertEquals(3.56, UnitConversions.wattsToDonkeyPower(890), 0.0001);
+        assertEquals(291.668, UnitConversions.wattsToDonkeyPower(72917), 0.0001);
     }
 
 
